@@ -4,12 +4,12 @@ from .models import Listing, Booking
 from .serializers import ListingSerializer, BookingSerializer
 # Create your views here.
 
-class ListingviewSet(viewsets.ModelViewset):
+class ListingViewSet(viewsets.ModelViewSet):
     """Handles CRUD for listings."""
     queryset = Listing.objects.all()
     serializer_class = ListingSerializer
 
-class BookingviewSet(viewsets.ModelViewset):
+class BookingViewSet(viewsets.ModelViewSet):
     """Handles CRUD for bookings."""
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
